@@ -44,8 +44,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.10949298813376485,
-      "y": 0.22170900692840645,
+      "x": 0.16073354908306364,
+      "y": 0.19861431870669746,
       "uniqueID": "id-2432",
       "name": "Maslow4_Folding_Frame_Parts_beam_outsides",
       "ioValues": [
@@ -2378,8 +2378,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.05555555555555555,
-      "y": 0.5057736720554272,
+      "x": 0.029126213592233007,
+      "y": 0.5219399538106235,
       "uniqueID": "id-2726",
       "ioValues": [
         {
@@ -2394,8 +2394,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.11057173678532903,
-      "y": 0.3741339491916859,
+      "x": 0.10355987055016182,
+      "y": 0.3302540415704388,
       "uniqueID": "id-2730",
       "ioValues": [
         {
@@ -2406,8 +2406,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.10787486515641856,
-      "y": 0.5681293302540416,
+      "x": 0.10248112189859762,
+      "y": 0.46420323325635104,
       "uniqueID": "id-2842",
       "name": "Maslow4_Folding_Frame_Parts_beam_outsides",
       "ioValues": [
@@ -4732,8 +4732,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.24271844660194175,
-      "y": 0.6374133949191686,
+      "x": 0.15965480043149946,
+      "y": 0.4665127020785219,
       "uniqueID": "id-3133",
       "ioValues": [
         {
@@ -4752,8 +4752,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.11272923408845739,
-      "y": 0.697459584295612,
+      "x": 0.03236245954692557,
+      "y": 0.6351039260969977,
       "uniqueID": "id-3139",
       "name": "x *y",
       "ioValues": [
@@ -4767,6 +4767,46 @@
         }
       ],
       "currentEquation": "x *y"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.16019417475728157,
+      "y": 0.3348729792147806,
+      "uniqueID": "id-3143",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 19.5
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.27130528586839264,
+      "y": 0.39260969976905313,
+      "uniqueID": "id-3149",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -4801,6 +4841,11 @@
       "ap2ID": "id-2842"
     },
     {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-2432",
+      "ap2ID": "id-3149"
+    },
+    {
       "ap2Name": "Input_1",
       "ap1ID": "id-2723",
       "ap2ID": "id-2432"
@@ -4821,9 +4866,19 @@
       "ap2ID": "id-3139"
     },
     {
+      "ap2Name": "zDist",
+      "ap1ID": "id-2723",
+      "ap2ID": "id-3143"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-2726",
       "ap2ID": "id-2730"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2730",
+      "ap2ID": "id-3143"
     },
     {
       "ap2Name": "geometry",
@@ -4831,9 +4886,24 @@
       "ap2ID": "id-3133"
     },
     {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-3133",
+      "ap2ID": "id-3149"
+    },
+    {
       "ap2Name": "zDist",
       "ap1ID": "id-3139",
       "ap2ID": "id-3133"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-3143",
+      "ap2ID": "id-3149"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-3149",
+      "ap2ID": "id-2314"
     }
   ],
   "unitsKey": "MM",
