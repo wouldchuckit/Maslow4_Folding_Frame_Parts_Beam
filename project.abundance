@@ -29,7 +29,7 @@
     {
       "atomType": "Input",
       "x": 0.01815,
-      "y": 0.3556581986143187,
+      "y": 0.2448036951501155,
       "uniqueID": "id-2319",
       "name": "BeamLength",
       "type": "number"
@@ -37,15 +37,15 @@
     {
       "atomType": "Input",
       "x": 0.01815,
-      "y": 0.4364896073903002,
+      "y": 0.325635103926097,
       "uniqueID": "id-2321",
       "name": "BeamHeight",
       "type": "number"
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.1790722761596548,
-      "y": 0.3764434180138568,
+      "x": 0.10949298813376485,
+      "y": 0.22170900692840645,
       "uniqueID": "id-2432",
       "name": "Maslow4_Folding_Frame_Parts_beam_outsides",
       "ioValues": [
@@ -2371,10 +2371,38 @@
     {
       "atomType": "Input",
       "x": 0.01815,
-      "y": 0.2678983833718245,
+      "y": 0.15242494226327943,
       "uniqueID": "id-2723",
       "name": "Woodthick",
       "type": "number"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.05555555555555555,
+      "y": 0.5057736720554272,
+      "uniqueID": "id-2726",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2438
+        },
+        {
+          "name": "y length",
+          "ioValue": 203
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.10949298813376485,
+      "y": 0.3741339491916859,
+      "uniqueID": "id-2730",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 19.5
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -2384,14 +2412,34 @@
       "ap2ID": "id-2432"
     },
     {
+      "ap2Name": "x length",
+      "ap1ID": "id-2319",
+      "ap2ID": "id-2726"
+    },
+    {
       "ap2Name": "Input_3",
       "ap1ID": "id-2321",
       "ap2ID": "id-2432"
     },
     {
+      "ap2Name": "y length",
+      "ap1ID": "id-2321",
+      "ap2ID": "id-2726"
+    },
+    {
       "ap2Name": "Input_1",
       "ap1ID": "id-2723",
       "ap2ID": "id-2432"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-2723",
+      "ap2ID": "id-2730"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2726",
+      "ap2ID": "id-2730"
     }
   ],
   "unitsKey": "MM",
