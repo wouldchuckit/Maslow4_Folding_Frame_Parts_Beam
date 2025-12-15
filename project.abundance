@@ -16,6 +16,10 @@
     {
       "name": "Woodthick",
       "ioValue": 19.5
+    },
+    {
+      "name": "LegLength",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -2378,8 +2382,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.029126213592233007,
-      "y": 0.5219399538106235,
+      "x": 0.0819848975188781,
+      "y": 0.5612009237875288,
       "uniqueID": "id-2726",
       "ioValues": [
         {
@@ -4752,8 +4756,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.03236245954692557,
-      "y": 0.6351039260969977,
+      "x": 0.08360302049622438,
+      "y": 0.6674364896073902,
       "uniqueID": "id-3139",
       "name": "x *y",
       "ioValues": [
@@ -4807,6 +4811,14 @@
           "ioValue": null
         }
       ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.01815,
+      "y": 0.40877598152424943,
+      "uniqueID": "id-3155",
+      "name": "LegLength",
+      "type": "number"
     }
   ],
   "allConnectors": [
