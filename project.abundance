@@ -29,7 +29,7 @@
     {
       "atomType": "Input",
       "x": 0.01815,
-      "y": 0.10999999999999999,
+      "y": 0.3071593533487298,
       "uniqueID": "id-2319",
       "name": "BeamLength",
       "type": "number"
@@ -37,7 +37,7 @@
     {
       "atomType": "Input",
       "x": 0.01815,
-      "y": 0.176,
+      "y": 0.3741339491916859,
       "uniqueID": "id-2321",
       "name": "BeamHeight",
       "type": "number"
@@ -4875,6 +4875,18 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.6040992448759439,
+      "y": 0.39260969976905313,
+      "uniqueID": "id-4420",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -5012,6 +5024,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-3788",
       "ap2ID": "id-2314"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-3788",
+      "ap2ID": "id-4420"
     },
     {
       "ap2Name": "Shape 1",
