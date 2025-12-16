@@ -16,10 +16,6 @@
     {
       "name": "Woodthick",
       "ioValue": 19.5
-    },
-    {
-      "name": "LegLength",
-      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -157,12 +153,76 @@
       ]
     },
     {
-      "atomType": "Input",
-      "x": 0.01815,
-      "y": 0.308,
-      "uniqueID": "id-3155",
-      "name": "LegLength",
-      "type": "number"
+      "atomType": "Rectangle",
+      "x": 0.1790722761596548,
+      "y": 0.7644341801385681,
+      "uniqueID": "id-3770",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 2438
+        },
+        {
+          "name": "y length",
+          "ioValue": 125
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.10517799352750809,
+      "y": 0.8845265588914549,
+      "uniqueID": "id-3774",
+      "name": "y - 4*x",
+      "ioValues": [
+        {
+          "name": "y",
+          "ioValue": 203
+        },
+        {
+          "name": "x",
+          "ioValue": 19.5
+        }
+      ],
+      "currentEquation": "y - 4*x"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2535059331175836,
+      "y": 0.7829099307159354,
+      "uniqueID": "id-3778",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 19.5
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.33225458468176916,
+      "y": 0.766743648960739,
+      "uniqueID": "id-3782",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 19.5
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.4568500539374326,
+      "y": 0.5750577367205543,
+      "uniqueID": "id-3788"
     },
     {
       "atomType": "GitHubMolecule",
@@ -4815,78 +4875,6 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Rectangle",
-      "x": 0.1790722761596548,
-      "y": 0.7644341801385681,
-      "uniqueID": "id-3770",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 2438
-        },
-        {
-          "name": "y length",
-          "ioValue": 125
-        }
-      ]
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.10517799352750809,
-      "y": 0.8845265588914549,
-      "uniqueID": "id-3774",
-      "name": "y - 4*x",
-      "ioValues": [
-        {
-          "name": "x",
-          "ioValue": 19.5
-        },
-        {
-          "name": "y",
-          "ioValue": 203
-        }
-      ],
-      "currentEquation": "y - 4*x"
-    },
-    {
-      "atomType": "Extrude",
-      "x": 0.2535059331175836,
-      "y": 0.7829099307159354,
-      "uniqueID": "id-3778",
-      "ioValues": [
-        {
-          "name": "height",
-          "ioValue": 19.5
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.33225458468176916,
-      "y": 0.766743648960739,
-      "uniqueID": "id-3782",
-      "ioValues": [
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 19.5
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "x": 0.4568500539374326,
-      "y": 0.5750577367205543,
-      "uniqueID": "id-3788"
     }
   ],
   "allConnectors": [
@@ -5001,16 +4989,6 @@
       "ap2ID": "id-3788"
     },
     {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-2432",
-      "ap2ID": "id-3149"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2842",
-      "ap2ID": "id-3133"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-3770",
       "ap2ID": "id-3778"
@@ -5034,6 +5012,16 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-3788",
       "ap2ID": "id-2314"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-2432",
+      "ap2ID": "id-3149"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-2842",
+      "ap2ID": "id-3133"
     }
   ],
   "unitsKey": "MM",
