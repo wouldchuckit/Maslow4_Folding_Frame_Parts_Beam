@@ -4875,18 +4875,6 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Assembly",
-      "x": 0.6040992448759439,
-      "y": 0.39260969976905313,
-      "uniqueID": "id-4420",
-      "ioValues": [
-        {
-          "name": "Shape 1",
-          "ioValue": null
-        }
-      ]
     }
   ],
   "allConnectors": [
@@ -5024,11 +5012,6 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-3788",
       "ap2ID": "id-2314"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-3788",
-      "ap2ID": "id-4420"
     },
     {
       "ap2Name": "Shape 1",
