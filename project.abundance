@@ -4881,6 +4881,12 @@
           "ioValue": 19.5
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.4568500539374326,
+      "y": 0.5750577367205543,
+      "uniqueID": "id-3788"
     }
   ],
   "allConnectors": [
@@ -4990,9 +4996,9 @@
       "ap2ID": "id-3149"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry1",
       "ap1ID": "id-3149",
-      "ap2ID": "id-2314"
+      "ap2ID": "id-3788"
     },
     {
       "ap2Name": "Shape 1",
@@ -5018,6 +5024,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-3778",
       "ap2ID": "id-3782"
+    },
+    {
+      "ap2Name": "geometry2",
+      "ap1ID": "id-3782",
+      "ap2ID": "id-3788"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-3788",
+      "ap2ID": "id-2314"
     }
   ],
   "unitsKey": "MM",
